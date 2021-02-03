@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
 body {
     font-family: 'Roboto Mono', monospace;
-    color: #333;
+    color: #222;
+    background:linear-gradient(-160deg, rgb(133, 74, 243), rgb(78, 202, 240));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -17,3 +21,16 @@ body {
 h2 {
     font-size: 8rem;
 }
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.eventKey, .eventWhich, .eventCode {
+    background-color: #fff;
+    border: 0.5px solid #bebebe;
+    border-radius: 10px;
+    padding: 0 5rem;
+}
+
