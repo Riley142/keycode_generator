@@ -1,31 +1,28 @@
 const displayChar = document.querySelector("h2")
+const eventKey = document.querySelector("#eventKey");
+const eventCode = document.querySelector("#eventCode");
+const eventWhich = document.querySelector("#eventWhich");
 
-
-// Display charcode & middle of the screen & event.wich
-
+// Display .event which in middle of the screen
 document.addEventListener("keypress", event => {
-    let key = event.keyCode;
-    console.log(key);
+    let key = event.which;
     displayChar.innerHTML = key;
 });
 
+// Display event.key
+document.addEventListener("keypress", event => {
+    let key = event.which;
+    eventKey.innerHTML = key;
+});
 
+// Display & event.code
+document.addEventListener("keypress", event => {
+    let key = event.code;
+    eventCode.innerHTML = key;
+});
 
-// // need to get char code
-// save it as variable?
-// to be able to reuse iut and display it inside h2
-
-
-
-
-// Display key & event.key
-// Display keycode & event.code
-
-
-// Get key & keycode
-// document.addEventListener("keypress", event => {
-//     console.log(event);
-// })
-
-
-
+// Display  event.wich
+document.addEventListener("keypress", event => {
+    let key = event.which;
+    eventWhich.innerHTML = key;
+});
